@@ -4,3 +4,8 @@
 *vcxproj*
 Log4Ard/target*
 Log4Ard/Visual Micro*
+*/target/*jar
+*/target/*src.tar*
+
+*/Visual Micro/*
+DS1868Driver/target/maven-archiver/pom.properties
