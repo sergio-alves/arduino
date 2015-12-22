@@ -9,3 +9,11 @@ Log4Ard/Visual Micro*
 
 */Visual Micro/*
 DS1868Driver/target/maven-archiver/pom.properties
+ADS1210Driver/Release/ADS1210Driver.log
+DS1868Driver/Release/DS1868Dr.2EE2E123.tlog/unsuccessfulbuild
+DS1868Driver/Release/DS1868Driver.log
+DS1868Driver/Release/DS1868Driver-Library.Build.CppClean.log
+Log4Ard/Release/Log4Ard.log
+Log4Ard/Release/Log4Ard-Library.Build.CppClean.log
+Log4Ard/Release/Log4Ard-Library.tlog/unsuccessfulbuild
+MAX187Driver/Release/MAX187Driver.log
