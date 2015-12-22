@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Arduino.h>
+#include <Log4Ard.h>
 
 class DS1868
 {

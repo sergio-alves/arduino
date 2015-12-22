@@ -28,28 +28,20 @@ Send 17 bits of data to the DS1868 IC to set trimmers whipers
 */
 void DS1868::setTrims() {
 	byte bit;
-
-	Serial.print(F("Pot values (0, 1) -> ("));
-	Serial.print(DS1868::trim1);
-	Serial.print(F(","));
-	Serial.print(DS1868::trim2);
-	Serial.println(F(")"));
+  if(&logger) 
+    logger.debug(F("Pot values (0, 1) -> (%i, %i)"), trim1, trim2);
 
 	//stop reset
 	digitalWrite(rstPin, HIGH);
-	delayMicroseconds(1);
-
-	//print message
-	Serial.print(F("Pot values bits: "));
+	delayMicroseconds(1);    
 	transmitBit(0);
-
-	transmitByte(DS1868::trim1);
-	Serial.print(" ");
-
-	transmitByte(DS1868::trim2);
-	Serial.println();
-
+	transmitByte(trim1);
+	transmitByte(trim2);
 	digitalWrite(rstPin, LOW);
+
+  //print message
+   if(&logger)
+    logger.info(F("Trimers set"));
 }
 
 
@@ -65,8 +57,6 @@ void DS1868::transmitBit(byte bit) {
 	digitalWrite(clkPin, HIGH);
 	delayMicroseconds(1);
 	digitalWrite(clkPin, LOW);
-
-	Serial.print(bit);
 }
 
 /*

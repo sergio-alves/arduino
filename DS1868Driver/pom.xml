@@ -1,8 +1,8 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>ch.santos-alves</groupId>
-  <artifactId>Log4Ard</artifactId>
-  <name>A logger for arduino</name>
+  <artifactId>DS1868Driver</artifactId>
+  <name>A c++ driver for the Dallas Semiconductor Dual digital potentiometer DS1868</name>
   <version>1.0.0</version>
   <build>
     <plugins>
